@@ -1,12 +1,41 @@
-streamlit>=1.28.0
+# PaperLens Combined Requirements
+# NOTE: This file is deprecated. Use:
+# - api/requirements.txt for backend dependencies
+# - ui/package.json for frontend dependencies
+#
+# This file is kept for reference only.
+
+# Streamlit and UI (DEPRECATED - using React instead)
+# streamlit>=1.28.0
+# streamlit-option-menu>=0.3.0
+
+# PDF Processing
 pypdf>=3.16.0
+PyPDF2>=3.0.0
+
+# LangChain and LLM
 langchain>=0.2.0
 langchain-core>=0.2.0
 langchain-community>=0.2.0
 langchain-text-splitters>=0.2.4
 langchain-huggingface>=0.1.0
 langchain-ollama>=0.2.0
+
+# Embeddings and Vector Store
 sentence-transformers>=2.2.0
 faiss-cpu>=1.7.0
+
+# Deep Learning (for embeddings)
 torch>=2.1.0
 transformers>=4.36.0
+
+# Utilities
+numpy>=1.24.0
+requests>=2.31.0
+
+# Optional: For better PDF handling
+pdfplumber>=0.10.0
+
+# Development
+watchdog>=3.0.0
+
